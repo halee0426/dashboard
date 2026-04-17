@@ -5,7 +5,7 @@ import plotly.express as px
 @st.cache_data
 def load_data():
     # 함수 내부 들여쓰기
-    df = pd.read_csv('./data/sales_data.csv')
+    df = pd.read_csv('sales_data.csv')
     df['date'] = pd.to_datetime(df['date'])
     return df
 
